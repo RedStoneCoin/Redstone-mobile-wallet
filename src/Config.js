@@ -17,12 +17,12 @@ const Config = {
     /**
      * If you can't figure this one out, I don't have high hopes
      */
-    coinName: 'TurtleCoin',
+    coinName: 'Redstone',
 
     /**
      * Prefix for URI encoded addresses
      */
-    uriPrefix: 'turtlecoin://',
+    uriPrefix: 'Redstone://',
 
     /**
      * How often to save the wallet, in milliseconds
@@ -33,13 +33,13 @@ const Config = {
      * The amount of decimal places your coin has, e.g. TurtleCoin has two
      * decimals
      */
-    decimalPlaces: 2,
+    decimalPlaces: 6,
 
     /**
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
      * In TurtleCoin, this converts to TRTL
      */
-    addressPrefix: 3914525,
+    addressPrefix: 0x95,
 
     /**
      * Request timeout for daemon operations in milliseconds
@@ -49,7 +49,7 @@ const Config = {
     /**
      * The block time of your coin, in seconds
      */
-    blockTargetTime: 30,
+    blockTargetTime: 20,
 
     /**
      * How often to process blocks, in millseconds
@@ -76,7 +76,7 @@ const Config = {
     /**
      * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
      */
-    ticker: 'TRTL',
+    ticker: 'RS',
 
     /**
      * Most people haven't mined any blocks, so lets not waste time scanning
@@ -87,7 +87,7 @@ const Config = {
     /**
      * The minimum fee allowed for transactions, in ATOMIC units
      */
-    minimumFee: 10,
+    minimumFee: 500,
 
     /**
      * Mapping of height to mixin maximum and mixin minimum
@@ -106,7 +106,7 @@ const Config = {
     /**
      * The length of a standard address for your coin
      */
-    standardAddressLength: 99,
+    standardAddressLength: 97,
 
     /**
      * The length of an integrated address for your coin - It's the same as
@@ -115,7 +115,7 @@ const Config = {
      * chunks of 8 chars at once into blocks of 11 chars, we can calculate
      * this automatically
      */
-    integratedAddressLength: 99 + ((64 * 11) / 8),
+    integratedAddressLength: 97 + ((64 * 11) / 8),
 
     /**
      * Use our native func instead of JS slowness
