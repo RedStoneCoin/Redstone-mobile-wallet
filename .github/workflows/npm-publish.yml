@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install npm dependencies
         run: |
-         sudo npm install -g react-native
-         sudo npm install -g yarn
+         sudo npm install react-native
+         sudo npm install  yarn
          sudo yarn install
          sudo sudo apt-get install default-jdk
           
